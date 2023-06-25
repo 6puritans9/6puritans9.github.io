@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Monolith</title>
+</head>
+
+<body class="background">
+  <div id="clock" class="letters">
+    <h1></h1>
+  </div>
+ 
+  <div id="quotes" class="hidden">
+    <span></span>
+    <br>
+    <span></span>
+  </div>
+
+  <div id="login-div">
+    <h2 class="letters">Hello, Stranger. <br> Share your name, then may we begin our little conversation.</h2>
+    <form id="login-form">
+      <span class="login"><input type="text" placeholder="...and EVERYONE likes to share their names." autofocus></span>
+      <!-- <button>Proceed</button> -->
+    </form>
+  </div>
+
+  <div id="todo-div" class="hidden">
+    <form>
+      <input type="text" placeholder="I'll keep them for good... just on behalf of you." required autofocus>
+      <!-- <button>button</button> -->
+    </form>
+    <ul id="todo-list" class="letters"></ul>
+  </div>
+
+
+  <style>
+    body{background-image: img;}
+  </style>
+
+  <script src="JS/clock.js"></script>
+  <script src="JS/login.js"></script>
+  <script src="JS/todoList.js"></script>
+  <script src="JS/quotes.js"></script>
+  <script src="JS/background.js"></script>
+</body>
+
+</html>

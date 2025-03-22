@@ -2,4 +2,4 @@
 
 ### You can visit kyulog through the link: [6puritans9.github.io](https://6puritans9.github.io/)
 
-![dancing_grimes](./src/public/images/grimes.gif)
+![dancing_grimes](./src/public/docs/grimes.gif)

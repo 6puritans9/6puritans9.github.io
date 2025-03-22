@@ -17,8 +17,11 @@ node_modules
 .pnp.*
 
 # Dev
-.vitepress/dist
-.vitepress/cache
+*/.vitepress/dist
+*/.vitepress/cache
 
 # Environmental Variables
 .env.*
+
+# Github Actions
+.github/*

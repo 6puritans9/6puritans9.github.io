@@ -3,6 +3,7 @@
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import Header from './Header.svelte';
 	import './layout.css';
+	import '../app.css';
 
 	let { children } = $props();
 </script>

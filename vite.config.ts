@@ -20,6 +20,11 @@ export default defineConfig({
 			outdir: './src/lib/paraglide'
 		})
 	],
+	server: {
+		fs: {
+			allow: ['styled-system']
+		}
+	},
 	test: {
 		expect: {
 			requireAssertions: true

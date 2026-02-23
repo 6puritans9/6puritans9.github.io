@@ -1,11 +1,7 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"^/*": ["./src/*"],
-			"^^/*": ["./*"]
-		},
+		"types": ["vitest/config"],
 		"rewriteRelativeImportExtensions": true,
 		"allowJs": true,
 		"checkJs": true,

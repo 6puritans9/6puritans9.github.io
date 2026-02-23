@@ -1,4 +1,3 @@
-/// <reference types="vitest/config" />
 import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import devtoolsJson from 'vite-plugin-devtools-json';
 import { defineConfig } from 'vitest/config';
@@ -33,6 +32,14 @@ export default defineConfig({
 			{
 				extends: './vite.config.ts',
 				test: {
+					name: 'unit',
+					include: ['tests/unit/**/*.unit.{test,spec}.ts'],
+					exclude: ['src/lib/server/**']
+				}
+			},
+			{
+				extends: './vite.config.ts',
+				test: {
 					name: 'client',
 					browser: {
 						enabled: true,
@@ -44,7 +51,7 @@ export default defineConfig({
 							}
 						]
 					},
-					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+					include: ['tests/client/**/*.svelte.{test,spec}.ts'],
 					exclude: ['src/lib/server/**']
 				}
 			},
@@ -53,8 +60,8 @@ export default defineConfig({
 				test: {
 					name: 'server',
 					environment: 'node',
-					include: ['src/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
+					include: ['tests/server/**/*.{test,spec}.ts'],
+					exclude: ['tests/**/*.svelte.{test,spec}.ts']
 				}
 			},
 			{

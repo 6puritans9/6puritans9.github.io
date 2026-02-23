@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"prepare": "panda codegen && (svelte-kit sync || echo '')",
+		"prepare": "(svelte-kit sync || echo '') && panda codegen",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",

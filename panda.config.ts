@@ -10,11 +10,31 @@ export default defineConfig({
 	// Files to exclude
 	exclude: [],
 
-	// Useful for theme customization
 	theme: {
-		extend: {}
+		extend: {
+			tokens: {
+				colors: {
+					primary: { value: '#5017E8' },
+					secondary: { value: '#abcdef' },
+					red: { value: '#CC1C14' },
+					green: { value: '#27F2A9' }
+				},
+				fonts: {
+					body: { value: 'system-ui, sans-serif' }
+				}
+			},
+			semanticTokens: {
+				colors: {
+					success: {
+						value: 'colors.green'
+					},
+					error: {
+						value: '{colors.red}'
+					}
+				}
+			}
+		}
 	},
 
-	// The output directory for your css system
 	outdir: 'styled-system'
 });

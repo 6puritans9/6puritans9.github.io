@@ -8,7 +8,9 @@ const config = {
 			base: process.env.BASE_PATH ?? ''
 		},
 		alias: {
-			'styled-system': './styled-system/*'
+			'styled-system': './styled-system/*',
+			'^': './src',
+			'^^': '.'
 		},
 		prerender: {
 			handleHttpError: ({ message }) => {
